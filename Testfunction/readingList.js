@@ -15,5 +15,5 @@ exports.numRead=() => {
 
 
 exports.addBooks=(bookDetails,bookinfor)=>{
-    readingList.push({...bookDetails,bookinfor});
+    readingList.push({...bookDetails,bookinfor});  
 }
