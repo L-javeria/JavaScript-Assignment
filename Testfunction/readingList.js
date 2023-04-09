@@ -12,3 +12,8 @@ exports.addBooks= (bookDetails,readDate,rating) =>{
 exports.numRead=() => {
     return readingList.length;
 }
+
+
+exports.addBooks=(bookDetails,bookinfor)=>{
+    readingList.push({...bookDetails,bookinfor});
+}
