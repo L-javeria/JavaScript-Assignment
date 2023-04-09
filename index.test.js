@@ -46,6 +46,8 @@ test('Returns books by ratings',()=> {
     const result = getBooksByRatings(booklist)
 
     //Assert
-    let expected_result = ['The Hobbit by J.R.R. Tolkein, 320 pages, 1937 read on January 1, 2020, ****']
-    expect(expected_result).toBe(result)
+    let expected_result = ['The Hobbit by J.R.R. Tolkein, 320 pages, 1937 read on January 1, 2020, ****',
+    'Alices Adventures in Wonderland by Lewis Carroll, 544 pages, 1865, read on May 22, 1992, *****']
+    
+    expect(expected_result).toEqual(result)
 })

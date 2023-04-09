@@ -26,4 +26,18 @@ function getBook(booklist){
     }
 } 
 
+//Sixth Test: return a list of books that all have that rating
+function getBooksByRatings(booklist){
+  
+    let books = [];
+   
+     booklist.forEach(function(book) {
+       if (book.includes('****')) {
+         books.push(book);
+       }
+     });
+   
+     return books;
+   }
 module.exports = getBook
+module.exports = getBooksByRatings
